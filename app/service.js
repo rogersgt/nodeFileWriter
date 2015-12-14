@@ -15,9 +15,15 @@
         return $http.get(url);
       };
 
+      var venueStuff = function() {
+        var url ='http://venuesintown.herokuapp.com/trackedVenues';
+        return $http.get(url);
+      };
+
       return {
         newUser: newUser,
-        findAll: findAll
+        findAll: findAll,
+        venueStuff: venueStuff
       };
 
     });

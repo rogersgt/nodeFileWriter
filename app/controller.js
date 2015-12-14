@@ -18,6 +18,12 @@
           seeUsers();
         });
       };
+
+      $scope.wow = function() {
+        MainService.venueStuff().success(function(data) {
+          console.log(data);
+        });
+      };
     })
 
 
