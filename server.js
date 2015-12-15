@@ -8,7 +8,12 @@ var request = require('request');
 var methodOverride = require('method-override');
 var errorHandler = require('errorhandler');
 var db = 'app/data.json';
+var mongoose = require('mongoose');
+//var mongooseConfig = process.env.MONGOLAB_LAB_URI || process.env.MONGO_URI || 'mongodb://localhost:9001/cerberus';
 var allData = [];
+
+
+//mongoose.connect()
 
 app.set('port', process.env.PORT || 9001);
 
